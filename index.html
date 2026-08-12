@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Javascript 1</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f3f0ff;
+        color: #333;
+        margin: 0;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 650px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(80, 60, 120, 0.15);
+      }
+
+      h1 {
+        text-align: center;
+        color: #6c4ab6;
+        margin-bottom: 30px;
+      }
+
+      .input-table {
+        width: 100%;
+        border-spacing: 10px;
+      }
+
+      label {
+        font-weight: bold;
+        color: #4f4268;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px 12px;
+        border: 2px solid #d8cef2;
+        border-radius: 8px;
+        outline: none;
+        font-size: 15px;
+      }
+
+      input:focus {
+        border-color: #8b6dcc;
+      }
+
+      button {
+        border: none;
+        padding: 10px 18px;
+        margin-right: 5px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+
+      #btn1 {
+        background: #7b5fc7;
+        color: white;
+      }
+
+      #btn1:hover {
+        background: #6548ae;
+      }
+
+      #btn2 {
+        background: #e6def8;
+        color: #5b438f;
+      }
+
+      #btn2:hover {
+        background: #d8cef2;
+      }
+
+      fieldset {
+        border: 2px solid #d8cef2;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      legend {
+        padding: 0 10px;
+        color: #6c4ab6;
+        font-weight: bold;
+      }
+
+      #tblNumbers {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      #tblNumbers th {
+        background: #7b5fc7;
+        color: white;
+        padding: 12px;
+      }
+
+      #tblNumbers td {
+        padding: 10px;
+        border-bottom: 1px solid #eee7fa;
+        color: #514567;
+      }
+
+      #btn3 {
+        background: #e98b9d;
+        color: white;
+      }
+
+      #btn3:hover {
+        background: #d96f83;
+      }
+
+      #btn4 {
+        background: #65b891;
+        color: white;
+      }
+
+      #btn4:hover {
+        background: #4fa17a;
+      }
+
+      .button-container {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Javascript Web Output #1</h1>
+
+      <table class="input-table">
+        <tr>
+          <td>
+            <label for="txtNum">Insert Positive Number:</label>
+          </td>
+
+          <td>
+            <input type="text" id="txtNum" placeholder="Enter a number" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button id="btn1">Insert</button>
+            <button id="btn2">Clear</button>
+          </td>
+        </tr>
+      </table>
+
+      <fieldset>
+        <legend>Inserted Numbers</legend>
+
+        <table id="tblNumbers">
+          <tr>
+            <th>Number</th>
+            <th>Result</th>
+          </tr>
+        </table>
+      </fieldset>
+
+      <div class="button-container">
+        <button id="btn3">Clear Items</button>
+
+        <button id="btn4" style="display: none">Get Total</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
